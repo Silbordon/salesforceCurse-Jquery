@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Salesforce</title>
+</head>
+
+<body>
+    <nav class="navbar bg-dark px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bolder" href="#">
+                Salesforce Products
+            </a>
+            <button class="btn btn-outline-warning fw-bolder" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">Add new Products</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row my-5" id="products-container">
+            <!-- product container -->
+        </div>
+
+    </div>
+
+
+    <!-- Modal del create-->
+    <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">New Product</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="myForm">
+                        <div class="form-group">
+                            <label>Product Image</label>
+                            <input type="text" class="form-control w-75" id="productImage"
+                                placeholder="Ej: https://www.google.com/aclk?sa=l&ai=DChcSEwiihZaD6dT-AhWkDH0KHafqD_cYABAPGgJwdg&sig=AOD64_17EI9U1kA2ex8fWpeXd6UTqOJv7Q&adurl&ctype=5&ved=2ahUKEwjQw4aD6dT-AhWGrZUCHR61B9AQwg96BQgBEI4B"
+                                required>
+                        </div>
+                        <div class="form-group mt-3 mb-3">
+                            <label>Product Name</label>
+                            <input type="text" class="form-control w-75" id="productName"
+                                placeholder="Ej: Salesforce B2C" required>
+                        </div>
+                        <div class="form-group mt-3 mb-4">
+                            <label>Product Description</label>
+                            <input type="text" class="form-control w-75" id="productDescription"
+                                placeholder="Ej: Lorem Lorem Lorem" required>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="create">Create new product</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- UPDATE -->
+
+    <div class="modal fade" id="staticBackdropUpdate" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">New Product</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="myFormUpdate">
+                        <div class="form-group">
+                            <label>Product Image</label>
+                            <input type="text" class="form-control w-75" id="productImageUpdate"
+                                placeholder="Ej: https://www.google.com/aclk?sa=l&ai=DChcSEwiihZaD6dT-AhWkDH0KHafqD_cYABAPGgJwdg&sig=AOD64_17EI9U1kA2ex8fWpeXd6UTqOJv7Q&adurl&ctype=5&ved=2ahUKEwjQw4aD6dT-AhWGrZUCHR61B9AQwg96BQgBEI4B"
+                                required>
+                        </div>
+                        <div class="form-group mt-3 mb-3">
+                            <label>Product Name</label>
+                            <input type="text" class="form-control w-75" id="productNameUpdate"
+                                placeholder="Ej: Salesforce B2C" required>
+                        </div>
+                        <div class="form-group mt-3 mb-4">
+                            <label>Product Description</label>
+                            <input type="text" class="form-control w-75" id="productDescriptionUpdate"
+                                placeholder="Ej: Lorem Lorem Lorem" required>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="updateModal">Update Product</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>
